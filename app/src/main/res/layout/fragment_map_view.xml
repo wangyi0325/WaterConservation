@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+        <RelativeLayout
+            android:id="@+id/layoutMapView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <pie.map.MapViews
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:id="@+id/tv_pie_scale_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0 m"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/pie_ic_scale" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:gravity="center">
+
+
+                <ImageButton
+                    android:id="@+id/ib_pie_zoom_in"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_zoom_in_selector" />
+
+                <ImageButton
+                    android:id="@+id/ib_pie_zoom_out"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/ib_pie_zoom_in"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/bg_zoom_out_selector" />
+
+
+                    <ImageView
+                        android:id="@+id/ivfullScreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_full_screen"
+                        />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textcolor_999999"/>
+        <LinearLayout
+            android:id="@+id/layoutMapSummary"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvTuBanName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图斑"
+                        android:textColor="@color/textcolor_black"
+                        android:textSize="@dimen/dimen_20dp"/>
+
+                    <TextView
+                        android:id="@+id/tvProjectName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="项目名称"
+                        android:textSize="@dimen/dimen_20dp"
+                        android:textColor="@color/text_color_666666"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="合规性：未批建"
+                        android:textColor="@color/text_color_666666"
+                        android:textSize="@dimen/dimen_20dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图斑类型：弃渣场"
+                        android:textColor="@color/text_color_666666"
+                        android:textSize="@dimen/dimen_20dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:padding="@dimen/dimen_5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="建设状况：施工"
+                        android:textColor="@color/text_color_666666"
+                        android:textSize="@dimen/dimen_20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="变化类型：新增"
+                        android:textColor="@color/text_color_666666"
+                        android:textSize="@dimen/dimen_20dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                android:paddingRight="@dimen/dimen_10dp">
+                <ImageView
+                    android:id="@+id/imgNavigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_navigation"
+                    />
+                <ImageView
+                    android:id="@+id/imgEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:src="@mipmap/icon_edit"
+                    android:layout_marginTop="@dimen/dimen_10dp"/>
+
+                <TextView
+                    android:id="@+id/tvEditing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编辑中..."
+                    android:textSize="@dimen/dimen_20dp"
+                    android:textColor="@color/text_color_3c3c3c"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/dimen_10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

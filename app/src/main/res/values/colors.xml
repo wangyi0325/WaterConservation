@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#72AAD2</color>
+
+
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="text_color_666666">#666666</color><!--小标题字体颜色标-->
+    <color name="textcolor_888888">#888888</color><!--文本字段颜色标准-->
+    <color name="textcolor_999999">#999999</color>
+    <color name="textcolor_black">#000000</color>
+    <color name="color_72AAD2">#72AAD2</color> <!--图斑列表默认选中颜色-->
+    <color name="color_E7BD9A">#E7BD9A</color> <!--图斑列表未选中颜色-->
+    <color name="textcolor_f3f3f3">#f3f3f3</color>
+    <color name="background">#f3f3f3</color>
+    <color name="text_color_3c3c3c">#3C3C3C</color>
+    <color name="red">#F53307</color>
+</resources>

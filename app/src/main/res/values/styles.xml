@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="WC.Theme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--ProgressDialog-->
+    <style name="LoadingProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!--圆形loading progressbar-->
+    <style name="myProgressBar" parent="Base.Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint" tools:targetApi="lollipop"> @color/colorAccent</item>
+        <item name="android:indeterminateTintMode" tools:targetApi="lollipop">src_atop</item>
+
+    </style>
+
+    <style name="text_3c_20dp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color_3c3c3c</item>
+        <item name="android:textSize">@dimen/dimen_20dp</item>
+    </style>
+
+    <!--选择Dialog弹窗样式-->
+    <style name="ShareDialogStyle" parent="Theme.AppCompat.Dialog">
+        <!--去掉标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--去掉背景-->
+        <item name="android:windowBackground">@color/white</item>
+        <!--设置进入退出动画-->
+        <item name="android:windowAnimationStyle">@style/ShareAnimStyle</item>
+    </style>
+
+    <!--分享弹窗动画-->
+    <style name="ShareAnimStyle">
+        <item name="android:windowEnterAnimation">@anim/anim_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_dialog_exit</item>
+    </style>
+
+
+
+    <style name="LoadingDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+
+</resources>

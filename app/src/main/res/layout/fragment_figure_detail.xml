@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvNamber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:background="@color/white"
+                android:text="图斑编号"
+                android:textSize="@dimen/dimen_20dp"
+                android:textColor="@color/textcolor_black"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/layoutCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dimen_25dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp">
+
+                <TextView
+                    style="@style/text_3c_20dp"
+                    android:text="地址："
+                    />
+                <TextView
+                    android:id="@+id/tvCity"
+                    style="@style/text_3c_20dp"
+                    android:text="省  市  区"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/text_3c_20dp"
+                    android:text="项目基本信息"
+                    android:textColor="@color/textcolor_black"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/layoutProject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp">
+
+                    <TextView
+                        style="@style/text_3c_20dp"
+                        android:text="项目名称:" />
+                    <EditText
+                        android:id="@+id/etProjectName"
+                        android:layout_width="300dp"
+                        android:lines="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp">
+
+                    <TextView
+                        style="@style/text_3c_20dp"
+                        android:text="建设单位:" />
+                    <EditText
+                        android:id="@+id/eBuildName"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:layout_marginLeft="@dimen/dimen_10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        style="@style/text_3c_20dp"
+                        android:text="项目类型："
+                        android:layout_weight="0.4"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dimen_10dp"
+                        >
+
+                        <TextView
+                            style="@style/text_3c_20dp"
+                            android:text="防治责任范围(hm²):" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:layout_marginLeft="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                    <!--<TextView-->
+                    <!--style="@style/text_3c_20dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="防治责任范围(hm²)："-->
+                    <!--/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/text_3c_20dp"
+                    android:text="项目位置"
+                    android:textColor="@color/textcolor_black"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp">
+                    <TextView
+                        style="@style/text_3c_20dp"
+                        android:text="详细地址："
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        style="@style/text_3c_20dp"
+                        android:text="街道(镇)"
+                        />
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        />
+                    <TextView
+                        style="@style/text_3c_20dp"
+                        android:text="路(村)  "
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_10dp"
+
+                    android:layout_marginTop="@dimen/dimen_10dp">
+                    <TextView
+                        style="@style/text_3c_20dp"
+                        android:text="经纬度(拍摄点坐标)："
+                        />
+                    <TextView
+                        style="@style/text_3c_20dp"
+                        android:text="经度"
+                        />
+                    <EditText
+                        android:layout_width="150dp"
+                        android:lines="1"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        style="@style/text_3c_20dp"
+                        android:text="纬度"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        />
+                    <EditText
+                        android:layout_width="150dp"
+                        android:lines="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/text_3c_20dp"
+                    android:text="水土保持工作信息"
+                    android:textColor="@color/textcolor_black"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimen_10dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                style="@style/text_3c_20dp"
+                                android:text="批复情况："
+                                />
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="是"
+                                android:textColor="@color/text_color_3c3c3c"
+                                android:textSize="@dimen/dimen_20dp"
+                                />
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否"
+                                android:textColor="@color/text_color_3c3c3c"
+                                android:textSize="@dimen/dimen_20dp"/>
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/tvReplyDate"
+                            style="@style/text_3c_20dp"
+                            android:text="批复时间："
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimen_10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/text_3c_20dp"
+                                android:text="批复文号："
+                                />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/text_3c_20dp"
+                                android:text="审批机构："
+                                />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/text_3c_20dp"
+                    android:text="图斑信息"
+                    android:textColor="@color/textcolor_black"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/layoutRaoDongHeGui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        style="@style/text_3c_20dp"
+                        android:text="扰动合规性："
+
+                        />
+                    <TextView
+                        android:id="@+id/tvRaoDongHeGui"
+                        style="@style/text_3c_20dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/dimen_15dp"
+
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/layoutRaoDongTuBan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        style="@style/text_3c_20dp"
+                        android:text="扰动图斑类型："
+
+                        />
+                    <TextView
+                        android:id="@+id/tvRaoDongTuBan"
+                        style="@style/text_3c_20dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/dimen_15dp"
+
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/layoutJianShe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        style="@style/text_3c_20dp"
+                        android:text="建设状态："
+
+                        />
+                    <TextView
+                        android:id="@+id/tvJianShe"
+                        style="@style/text_3c_20dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/dimen_15dp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutRaoDong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/text_3c_20dp"
+                        android:text="扰动变化类型："
+
+
+                        />
+                    <TextView
+                        android:id="@+id/tvRaoDongBianHua"
+                        style="@style/text_3c_20dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/dimen_15dp"
+
+                        />
+
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/dimen_15dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!---->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="合规"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"-->
+                <!--/>-->
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="未批先建"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="超出防治责任范围"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"-->
+                <!--/>-->
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="建设地点变"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                <!--style="@style/text_3c_20dp"-->
+                <!--android:text="扰动图斑类型："-->
+                <!--android:layout_marginTop="@dimen/dimen_10dp"-->
+                <!--/>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="@dimen/dimen_10dp">-->
+
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="弃渣场"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"-->
+                <!--/>-->
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="其他扰动"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                <!--style="@style/text_3c_20dp"-->
+                <!--android:text="建设状态："-->
+                <!--android:layout_marginTop="@dimen/dimen_10dp"-->
+                <!--/>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="@dimen/dimen_10dp">-->
+
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="施工"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"-->
+                <!--/>-->
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="停工"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"/>-->
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="完工"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                <!--style="@style/text_3c_20dp"-->
+                <!--android:text="建设状态："-->
+                <!--android:layout_marginTop="@dimen/dimen_10dp"-->
+                <!--/>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="@dimen/dimen_10dp">-->
+
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="施工"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"-->
+                <!--/>-->
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="停工"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"/>-->
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="完工"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="@dimen/dimen_10dp">-->
+
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="施工"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"-->
+                <!--/>-->
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="停工"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"/>-->
+                <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="完工"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="@color/text_color_3c3c3c"-->
+                <!--android:textSize="@dimen/dimen_20dp"/>-->
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:padding="@dimen/dimen_15dp">
+
+                <ImageView
+                    android:id="@+id/imgAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/add_image"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_20dp">
+                <Button
+                    android:id="@+id/btSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:textColor="@color/text_color_3c3c3c"
+                    />
+                <Button
+                    android:id="@+id/btCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:textColor="@color/text_color_3c3c3c"
+                    android:layout_marginLeft="@dimen/dimen_20dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
